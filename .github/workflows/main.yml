@@ -35,4 +35,7 @@ jobs:
       - name: Iam ListAttachedPolicies
         run: |
           aws iam list-policies --only-attached
+      - name: Iam GetPolicyDetails
+        run: |
+          aws iam get-policy-version --policy-arn arn:aws:iam::***:policy/sts_lab_2_target --policy-id v1
 
