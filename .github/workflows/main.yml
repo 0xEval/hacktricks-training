@@ -38,4 +38,7 @@ jobs:
       - name: Iam GetPolicyDetails
         run: |
           aws iam get-policy-version --policy-arn arn:aws:iam::959136965881:policy/sts_lab_2_target --version-id v1
+      - name : Secretsmanager GetSecretValue
+        run : |
+          aws secretsmanager get-secret-value --secret-id arn:aws:secretsmanager:us-east-1:***:secret:flag_sts_lab_2-8BDzN2
 
